@@ -1,0 +1,211 @@
+$border_colour: #d96500;
+$white: #fffef2;
+$black: #373735;
+$blockquote_border: #d91202;
+$link_color: #1f8200;
+$link_visited: #afafaf;
+$table_header: #b4beba;
+$table_odd: #34b543;
+$table_even: #d58379;
+$dark_background: $black;
+$light_background: $white;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+a {
+    color: $link_color;
+    &:visited {
+        color: $link_visited;
+    }
+    &:hover {
+        text-decoration: overline underline;
+    }
+}
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+    padding: 8px;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 12px;
+    & img {
+        width: 64px;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+nav {
+    margin: 12px auto;
+    font-size: 24px;
+    border: 1px solid $border_colour;
+    padding: 6px;
+    border-radius: 12px;
+    & ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    & li {
+        min-width: 100px;
+        &::before {
+            content: "🍁 ";
+        }
+    }
+}
+
+main {
+    & img {
+        display: block;
+        max-width: 120px;
+    }
+}
+
+article {
+    margin: 12px auto;
+    border: 1px solid $border_colour;
+    padding: 4px;
+    border-radius: 8px;
+    & h2 {
+        padding: 8px 0;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    & h3 {
+        margin: 12px 24px;
+        text-decoration: underline;
+    }
+    & p {
+        padding: 12px;
+    }
+    & blockquote {
+        width: 80%;
+        margin: auto;
+        border-left: 4mm ridge $blockquote_border;
+        border-radius: 2px;
+        padding-left: 9px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    & > a {
+        display: block;
+        text-align: right;
+    }
+}
+
+section {
+    & img {
+        max-width: 340px;
+        border-radius: 8px;
+    }
+    & ol {
+        margin-left: 54px;
+        padding-left: 24px;
+        margin-bottom: 12px;
+        & li {
+            list-style: lower-roman;
+        }
+    }
+    & ul {
+        margin-left: 54px;
+        padding-left: 24px;
+        margin-bottom: 12px;
+        & li {
+            list-style: square;
+        }
+    }
+
+}
+
+
+.grid {
+    margin: 12px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: normal;
+    gap: 10px;
+}
+
+table {
+    margin: 20px auto;
+    border: 1px solid $border_colour;
+    border-radius: 8px;
+    padding: 4px;
+    color: $black;
+    & tr,
+      td {
+        padding: 4px;
+    }
+}
+
+thead {
+    & td {
+        background-color: $table_header;
+        padding: 2px;
+        text-align: center;
+    }
+}
+
+tbody {
+    & tr:nth-child(odd) {
+        background-color: $table_odd;
+    }
+    & tr:nth-child(even) {
+        background-color: $table_even;
+    }
+}
+
+tfoot {
+    text-align: center;
+    & tr {
+        background-color: $table_header;
+    }
+}
+
+footer {
+    margin: 10px auto;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 980px) {
+    body {
+        width: 80vw;
+        margin: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: $dark_background;
+        color: $white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: $light_background;
+        color: $black;
+    }
+}

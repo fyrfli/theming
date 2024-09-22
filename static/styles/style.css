@@ -1,0 +1,189 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+a {
+  color: #1f8200;
+}
+a:visited {
+  color: #afafaf;
+}
+a:hover {
+  text-decoration: overline underline;
+}
+
+body {
+  font-family: monospace;
+  font-size: 16px;
+  padding: 8px;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px;
+}
+header img {
+  width: 64px;
+  height: auto;
+  border-radius: 50%;
+}
+
+nav {
+  margin: 12px auto;
+  font-size: 24px;
+  border: 1px solid #d96500;
+  padding: 6px;
+  border-radius: 12px;
+}
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+nav li {
+  min-width: 100px;
+}
+nav li::before {
+  content: "🍁 ";
+}
+
+main img {
+  display: block;
+  max-width: 120px;
+}
+
+article {
+  margin: 12px auto;
+  border: 1px solid #d96500;
+  padding: 4px;
+  border-radius: 8px;
+}
+article h2 {
+  padding: 8px 0;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+}
+article h3 {
+  margin: 12px 24px;
+  text-decoration: underline;
+}
+article p {
+  padding: 12px;
+}
+article blockquote {
+  width: 80%;
+  margin: auto;
+  border-left: 4mm ridge #d91202;
+  border-radius: 2px;
+  padding-left: 9px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+article > a {
+  display: block;
+  text-align: right;
+}
+
+section img {
+  max-width: 340px;
+  border-radius: 8px;
+}
+section ol {
+  margin-left: 54px;
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+section ol li {
+  list-style: lower-roman;
+}
+section ul {
+  margin-left: 54px;
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+section ul li {
+  list-style: square;
+}
+
+.grid {
+  margin: 12px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: normal;
+  gap: 10px;
+}
+
+table {
+  margin: 20px auto;
+  border: 1px solid #d96500;
+  border-radius: 8px;
+  padding: 4px;
+  color: #373735;
+}
+table tr,
+table td {
+  padding: 4px;
+}
+
+thead td {
+  background-color: #b4beba;
+  padding: 2px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #34b543;
+}
+tbody tr:nth-child(even) {
+  background-color: #d58379;
+}
+
+tfoot {
+  text-align: center;
+}
+tfoot tr {
+  background-color: #b4beba;
+}
+
+footer {
+  margin: 10px auto;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 980px) {
+  body {
+    width: 80vw;
+    margin: auto;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #373735;
+    color: #fffef2;
+  }
+}
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #fffef2;
+    color: #373735;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

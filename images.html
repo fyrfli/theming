@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just images</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <img loading="lazy" src="static/images/handcup.jpeg" alt="" class="header_img loading="lazy"">
+        <h1 class="header_h1">just images</h1>
+    </header>
+
+    <nav>
+        <ul class="nav_container">
+            <li class="nav_item"><a href="index.html" rel="noopener noreferrer">home</a></li>
+            <li><a href="prose.html">prose</a></li>
+            <li><a href="lists.html">lists</a></li>
+            <li><a href="tables.html">tables</a></li>
+            <li><a href="images.html">images</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <article class="images">
+            <h2>images</h2>
+            <section class="grid">
+                <img loading="lazy" src="static/images/DSC_0908.jpeg" alt="">
+                <img loading="lazy" src="static/images/SylaHusky-1.jpeg" alt="">
+                <img loading="lazy" src="static/images/candle.jpg" alt="">
+                <img loading="lazy" src="static/images/sm-fountain-pen.jpg" alt="">
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        &copy;<span id="jsyear"></span> Camille (<a href="https://fyrfli.dev/fyrfli" target="_blank">@fyrfli</a>) Frantz
+    </footer>
+
+    <script>
+        const todayDate = new Date();
+        jsyear.innerText = todayDate.getFullYear();
+    </script>
+</body>
+</html>

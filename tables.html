@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just tables</title>
+    <link rel="shortcut icon" href="https://cdn.fyrfli.link/i/handcup.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img loading="lazy" src="https://fyrfli.net/avatar" alt="black woman in a hat with head tipped down, the brin of the hat hiding her eyes" />
+        <h1 class="header-h1">just tables</h1>
+    </header>
+
+    <nav>
+        <ul class="nav_container">
+            <li class="nav_item"><a href="index.html" rel="noopener noreferrer">home</a></li>
+            <li><a href="prose.html">prose</a></li>
+            <li><a href="lists.html">lists</a></li>
+            <li><a href="tables.html">tables</a></li>
+            <li><a href="images.html">images</a></li>
+        </ul>
+    </nav>
+
+    <main class="tables">
+        <article>
+            <section>
+                <h2>tables</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>one</td>
+                            <td>two</td>
+                            <td>three</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table_body_line">
+                            <td class="table_line_item">column one</td>
+                            <td class="table_line_item">this is column two and it's slightly larger than column one</td>
+                            <td class="table_line_item">col. 3</td>
+                        </tr>
+                        <tr class="table_body_line">
+                            <td class="table_line_item">column one</td>
+                            <td class="table_line_item">this is column two and it's slightly larger than column one</td>
+                            <td class="table_line_item">col. 3</td>
+                        </tr>
+                        <tr>
+                            <td>row three, column one</td>
+                            <td>row three, column two</td>
+                            <td>row three, column three</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">row four, columns one and two</td>
+                            <td>row four, column tree</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="span_two">agreement</td>
+                            <td>contract</td>
+                        </tr>
+                        <tr>
+                            <td>letter</td>
+                            <td>feather</td>
+                            <td>cotton</td>
+                        </tr>
+                        <tr>
+                            <td>all the things</td>
+                            <td colspan="2" class="span_two">just one</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="span_three">final hour</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    
+    <footer class="footer">
+      &copy;<span id="jsyear"></span> Camille (<a href="https://fyrfli.dev/fyrfli" target="_blank">@fyrfli</a>) Frantz
+    </footer>
+
+    <script>
+        const todayDate = new Date();
+        jsyear.innerText = todayDate.getFullYear();
+    </script>
+    
+</body>
+</html>
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just lists</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="shortcut icon" href="https://cdn.fyrfli.link/i/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <img loading="lazy" src="https://cdn.fyrfli.link/i/handcup.jpeg" alt="" class="header_img loading="lazy"">
+        <h1 class="header_h1">just lists</h1>
+    </header>
+
+    <nav>
+        <ul class="nav_container">
+            <li class="nav_item"><a href="index.html" rel="noopener noreferrer">home</a></li>
+            <li><a href="prose.html">prose</a></li>
+            <li><a href="lists.html">lists</a></li>
+            <li><a href="tables.html">tables</a></li>
+            <li><a href="images.html">images</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <article class="lists">
+            <h2 class="lists_h2">lists</h2>
+            <p class="lists_paragraph">
+                creating an ordered and unordered list for theming tests
+            </p>
+            <h3 class="lists_h3">ordered list</h3>
+            <section class="ol">
+                <ol class="ol_container">
+                    <li class="ol_item">one</li>
+                    <li class="ol_item">two</li>
+                    <li class="ol_item">three</li>
+                    <li class="ol_item">four</li>
+                    <li class="ol_item">five</li>
+                    <li class="ol_item">six</li>
+                    <li class="ol_item">seven</li>
+                    <li class="ol_item">eight</li>
+                    <li class="ol_item">nine</li>
+                    <li class="ol_item">ten</li>
+                </ol>
+            </section>
+            <h3 class="lists_h3">unordered list</h3>
+            <section class="ul">
+                <ul class="ul_container">
+                    <li class="ul_item">one</li>
+                    <li class="ul_item">two</li>
+                    <li class="ul_item">three</li>
+                    <li class="ul_item">four</li>
+                    <li class="ul_item">five</li>
+                    <li class="ul_item">six</li>
+                    <li class="ul_item">seven</li>
+                    <li class="ul_item">eight</li>
+                    <li class="ul_item">nine</li>
+                    <li class="ul_item">ten</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        &copy;<span id="jsyear"></span> Camille (<a href="https://fyrfli.dev/fyrfli" target="_blank">@fyrfli</a>) Frantz
+    </footer>
+
+    <script>
+        const todayDate = new Date();
+        jsyear.innerText = todayDate.getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+/* dark mode user-agent-styles */
+html {
+  color-scheme: dark light;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  padding: 1.6rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 2.2rem;
+  text-align: right;
+}
+header img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+nav {
+  padding: 12px;
+  border: 1px dashed white;
+  border-radius: 12px;
+  font-size: 1.4rem;
+}
+nav ul {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+nav ul li {
+  min-width: 100px;
+}
+nav ul li:before {
+  content: "≫ ";
+}
+
+body {
+  width: 95vw;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+main article {
+  margin: 12px 0;
+  border: 1px dashed white;
+  padding: 12px;
+  border-radius: 12px;
+}
+main article > a {
+  display: block;
+  text-align: right;
+  padding: 0.4rem;
+}
+main article h2 {
+  text-align: center;
+}
+main article p {
+  padding: 0.4rem 0;
+}
+
+.prose_section {
+  border: 1px solid lightcoral;
+}
+.prose_section h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.prose_section p {
+  margin: 16px;
+}
+.prose_section blockquote {
+  border-left: solid red;
+  margin: auto;
+  width: 80%;
+  padding: 0.5rem;
+  text-align: justify;
+  font-style: italic;
+}
+
+.lists {
+  border: 1px solid lightgreen;
+}
+.lists h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 0.4rem;
+}
+.lists h3 {
+  font-weight: bold;
+  margin: 0 1rem;
+}
+.lists section {
+  margin: 0.2rem 2.5rem;
+}
+.lists ol,
+.lists ul {
+  margin: 0 2rem;
+}
+
+.ol_item {
+  list-style: lower-roman;
+}
+
+.ul_item {
+  list-style: disc;
+}
+
+.tables {
+  border: 1px solid goldenrod;
+  margin: 0.8rem auto;
+  padding: 0.1rem;
+  border-radius: 12px;
+}
+.tables h2 {
+  text-align: center;
+}
+.tables table {
+  margin: 0.4rem auto 1.2rem;
+  border: 1px solid goldenrod;
+  border-radius: 4px;
+}
+.tables table thead {
+  letter-spacing: 2px;
+  border: 1px dashed white;
+}
+.tables table thead tr {
+  font-size: 1.8rem;
+  text-align: center;
+  color: black;
+}
+.tables table thead tr td {
+  background-color: lightpink;
+  border-radius: 4px;
+  width: 33%;
+}
+.tables table tbody {
+  color: black;
+}
+.tables table tbody td {
+  padding: 0 0.4rem;
+}
+.tables table tbody tr:nth-child(odd) {
+  background-color: lightgreen;
+}
+.tables table tbody tr:nth-child(even) {
+  background-color: lightskyblue;
+}
+.tables table tfoot {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  background-color: lightpink;
+  color: black;
+}
+
+.span_two {
+  text-align: right;
+}
+
+.images {
+  border: 1px solid #674834;
+  padding: 0.4rem;
+}
+.images section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: normal;
+  gap: 12px;
+  margin: 10px auto;
+}
+.images img {
+  width: 95%;
+  border-radius: 12px;
+  box-shadow: 1px 2px 4px grey;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 980px) {
+  header {
+    width: 80vw;
+    margin: auto;
+  }
+  nav {
+    width: 80vw;
+    margin: auto;
+  }
+  main {
+    width: 80vw;
+    margin: auto;
+  }
+  .images img {
+    width: 45%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .images img {
+    box-shadow: 1px 2px 4px #674834;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
