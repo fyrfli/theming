@@ -4,6 +4,6 @@ the idea behind this repo is to create a starting point with which to apply to p
 
 <p>ping me here:</p>
 <address>
-    <a href="mailto:fyrfli@diaspora.im">📧 email </a>
+    <a href="mailto:fyrfli@diaspora.im">📧 email </a><br>
     <a href="https://diaspora.im/@fyrfli">💬 social media</a>
 </address>
